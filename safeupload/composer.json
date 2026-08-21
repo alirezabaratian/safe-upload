@@ -1,0 +1,11 @@
+{
+    "name": "safeupload/safeupload",
+    "description": "Safe Upload Nextcloud app",
+    "type": "project",
+    "license": "AGPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "OCA\\SafeUpload\\": "lib/"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+#safeupload-admin-settings .safeupload-field {
+    margin-bottom: 0.75em;
+}
+
+#safeupload-admin-settings label {
+    display: inline-block;
+    width: 14em;
+}
+
+#safeupload-save-status {
+    margin-left: 1em;
+}

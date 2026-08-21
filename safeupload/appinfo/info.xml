@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>safeupload</id>
+    <name>Safe Upload</name>
+    <summary>Scans files on upload against an external scan API and blocks unsafe writes.</summary>
+    <description><![CDATA[
+Safe Upload intercepts file creates and updates, sends the file content to a
+configurable external scan API, and synchronously blocks the write if the
+scan verdict is infected, encrypted, or an error occurred (fail-closed by
+default).
+]]></description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author>Safe Upload</author>
+    <namespace>SafeUpload</namespace>
+    <category>security</category>
+    <website>https://github.com/your-org/safeupload</website>
+    <bugs>https://github.com/your-org/safeupload/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="27" max-version="34"/>
+    </dependencies>
+    <settings>
+        <admin>OCA\SafeUpload\Settings\AdminSettings</admin>
+        <admin-section>OCA\SafeUpload\Settings\AdminSection</admin-section>
+    </settings>
+</info>
